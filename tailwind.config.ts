@@ -16,7 +16,8 @@ const config: Config = {
       },
       fontSize : {
         "xl" : ["21px","28px"],
-        "3.5xl" : ["32px","normal"]
+        "2.5xl" : ["26px" , "normal"],
+        "3.5xl" : ["32px","normal"],
       },
       colors : {
         "primary" : "#0192FE",

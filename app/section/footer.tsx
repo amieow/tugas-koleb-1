@@ -48,7 +48,7 @@ export function RightFooterLg(){
       <Rows className=" gap-24 hidden lg:flex">
          {Menu.map((itm,index) => (
             <Cols className="gap-6" key={index}>
-               <Title variantI={2}>
+               <Title variantI={4}>
                   {itm.Title}
                </Title>
                <Cols className=" gap-4">

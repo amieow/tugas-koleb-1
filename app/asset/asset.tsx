@@ -57,3 +57,20 @@ export const navFooter = [
       url: "/contact",
    },
 ];
+
+export const plans = [
+   {
+      title : "Office Space",
+      description : "Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
+   },
+   {
+      title : "Coworking Space",
+      description : "Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
+   },
+   {
+      title : "Meeting Space",
+      description : "Informal drop-in meeting spaces with secure WiFi, access to a printer, scanner and photocopier."
+   },
+]
+
+export const location = ["New Orleans, USA","Bangalore, India","Sydney, Australia "]

@@ -8,7 +8,7 @@ export const Rows = ({
    ...props
 } : LayoutProps) => {
    return (
-      <div {...props} className={`flex ${reversed ? "flex-row-reverse" : "flex-row"} ${whiteSpaceX ? "px-36" : ""} ${className}`}>
+      <div {...props} className={`flex ${reversed ? "flex-row-reverse" : "flex-row"} ${whiteSpaceX ? "mx-auto max-w-[1440px]" : ""} ${className}`}>
          {children}
       </div>
    )
@@ -22,7 +22,7 @@ export const Cols = ({
    ...props
 } : LayoutProps) => {
    return (
-      <div {...props} className={`flex ${reversed ? "flex-col-reverse" : "flex-col"} ${whiteSpaceX ? "mx-auto max-w-[1440px]" : ""} ${className}`}>
+      <div  {...props} className={`flex ${reversed ? "flex-col-reverse" : "flex-col"} ${whiteSpaceX ? "mx-auto max-w-[1440px]" : ""} ${className}`}>
          {children}
       </div>
    )
