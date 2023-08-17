@@ -28,7 +28,7 @@ export default function Navbar() {
                      </Link>
                   </Button>
                ))}
-               <Button variant={"primary"} className="px-5 py-3">
+               <Button variant={"primary"} className="px-5 py-2">
                   <Paraf className="text-white text-[18px]">
                      Sign up
                   </Paraf>
