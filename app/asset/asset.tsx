@@ -58,6 +58,30 @@ export const navFooter = [
    },
 ];
 
+export const navMenu = [
+   {
+      text: "About",
+      url: "/about",
+   },
+   {
+      text: "Pricing",
+      url: "/pricing",
+   },
+   {
+      text: "Offices",
+      url: "/offices",
+   },
+   {
+      text: "Spaces",
+      url: "/spaces",
+   },
+   {
+      text: "Contact us",
+      url: "/contact",
+   },
+
+];
+
 export const plans = [
    {
       title : "Office Space",
