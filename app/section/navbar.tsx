@@ -17,7 +17,7 @@ export default function Navbar() {
             <Link href={"/"} >
                <Logo withLogo />
             </Link>
-            <Rows className={`hidden sm:flex items-center ${menuOpen ? 'hidden' : 'flex'} gap-8`}>
+            <Rows className={`hidden lg:flex items-center ${menuOpen ? 'hidden' : 'flex'} gap-8`}>
                {navMenu.map((menu, index) => (
                   <Button variant={"none"} key={index} className="active:font-bold">
                      <Link href={menu.url}>
@@ -27,18 +27,18 @@ export default function Navbar() {
                      </Link>
                   </Button>
                ))}
-               <Button variant={"primary"} className="px-5 py-3">
+               <Button variant={"primary"} className="px-5 py-3 flex-shrink-0">
                   <Paraf className="text-white text-[18px]">
                      Sign up
                   </Paraf>
                </Button>
             </Rows>
-            <Rows onClick={toggleMenu} className="cursor-pointer sm:hidden pl-24">
+            <Rows onClick={toggleMenu} className="cursor-pointer lg:hidden pl-24">
                <BsList className="h-8 w-8 text-black" />
             </Rows>
          </Rows>
          {menuOpen && (
-            <Cols className="fixed z-10 top-0 left-0 w-[75%] sm:hidden h-screen p-10 ease-in-out duration-700 bg-slate-50">
+            <Cols className="fixed z-10 top-0 left-0 w-[75%] lg:hidden h-screen p-10 ease-in-out duration-700 bg-slate-50">
                <Rows className="flex w-full items-center justify-end">
                   <Rows onClick={toggleMenu} className="cursor-pointer">
                      <BsX className="h-8 w-8 text-black" />

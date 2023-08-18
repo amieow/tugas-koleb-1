@@ -55,3 +55,19 @@ export const AboutHero = () => {
       </Cols>
    )
 }
+
+export const PricingHero = () => {
+   return (
+      <Cols whiteSpaceBottom whiteSpaceTop whiteSpaceX className="w-full pb-16 p-10 h-full">
+         <Cols className="max-w-[80%] text-center" whiteSpaceX>
+            <Title variantI={1} className="mb-3">
+               Discover flexible spaces and solutions to your business
+            </Title>
+            <Paraf>
+               For companies of all sizes, we provide the global scale and flexibility to help your business adapt to uncertainty. Find the space that's right for you.
+            </Paraf>
+         </Cols>
+      </Cols>
+   )
+}
+
