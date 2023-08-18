@@ -9,7 +9,7 @@ import Button from "../components/button";
 export default function Footer() {
    return (
       <Cols className=" px-12">
-         <Cols className="w-full max-w-[1440px] mb-36 mx-auto gap-9">
+         <Cols whiteSpaceBottom className="w-full max-w-[1440px] mx-auto gap-9">
             <Rows className="border-b pb-12 lg:border-t justify-between border-black border-opacity-30 pt-16">
                <LeftFooter/>
                <RightFooterLg/>

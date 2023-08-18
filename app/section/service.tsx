@@ -9,7 +9,7 @@ import { classname } from '../asset/type/type'
 
 export default function Service({className = ""} : classname) {
    return (
-      <Cols className={`gap-16 px-3 mb-36 ${className}`} whiteSpaceX>
+      <Cols whiteSpaceBottom className={`gap-16 px-3 ${className}`} whiteSpaceX>
          <Cols className='gap-6'>
             <Paraf className=' text-primary font-bold'>Our Services</Paraf>
             <Title className=' max-w-6xl' variantI={1}>
@@ -20,7 +20,7 @@ export default function Service({className = ""} : classname) {
             {Services.map((servis,index) => (
                <Cols className='gap-7 rounded-3xl px-12 py-11 bg-white w-full lg:max-w-sm' key={index}>
                   <Image width={62} alt={`Services-${index + 1}`} height={62} src={`Service/image-${index + 1}.svg`} />
-                  <Title variantI={4}>
+                  <Title variantI={5}>
                      {servis.title}
                   </Title>
                   <Paraf>
