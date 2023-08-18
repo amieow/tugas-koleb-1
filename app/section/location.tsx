@@ -9,7 +9,7 @@ import Button from '../components/button'
 
 export default function Location({className =""} : classname) {
    return (
-      <Cols className={`lg:flex-row mb-36 gap-10 lg:gap-36 ${className}`} whiteSpaceX>
+      <Cols whiteSpaceBottom className={`lg:flex-row gap-10 lg:gap-36 ${className}`} whiteSpaceX>
          <div className='relative w-full max-w-md lg:max-w-3xl h-[588px] lg:h-[808px]'>
             <Image src={"Location/image-1.svg"} alt='blur' fill style={{ maxWidth: '100%', marginLeft: '0', marginRight: 'auto' }}/>
          </div>

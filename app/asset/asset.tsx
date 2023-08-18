@@ -98,3 +98,79 @@ export const plans = [
 ]
 
 export const location = ["New Orleans, USA","Bangalore, India","Sydney, Australia "]
+
+export const Reviews = [
+   {
+      user : {
+         name : "Randall Robertson",
+         title : "Project lead at Zoole",
+         avatar : "Review/image-1.svg"
+      },
+      description : `Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.`
+   },
+   {
+      user : {
+         name : "Del Gibbs",
+         title : "VP, Globee Softech",
+         avatar : "Review/image-2.svg"
+      },
+      description : `Futurspace is an excellent coworking space for my agency. It’s a great place to meet other business. owners expectations`
+   },
+   {
+      user : {
+         name : "Brittany",
+         title : "Co-Founder & CTO - Payfi",
+         avatar : "Review/image-3.svg"
+      },
+      description : `Quisque consectetur vulputate odio, non dictum metus porttitor molestie. Duis pharetra suscipit dolor, quis euismod velit fringilla sed.`
+   },
+   {
+      user : {
+         name : "Randall Robertson",
+         title : "Project lead at Zoole",
+         avatar : "Review/image-4.svg"
+      },
+      description : `Lorem ipsum dolor sit amet consectetur non adipiscing elit gravida posuere odio metus adipiscing tincidunt venenatis amet sagittis tellus porttitor enim blandit venenatis tellus.`
+   }
+]
+
+export const dataCompany = [
+   {
+      data : "3,000+",
+      title : "Happy Members",
+      description : "We offer offices for lease by the day, by the week, or by the year."
+   },
+   {
+      data : "12+",
+      title : "Locations across the globe",
+      description : "We offer offices for lease by the day, by the week, or by the year."
+   },
+   {
+      data : "10+",
+      title : "Years of service",
+      description : "We offer offices for lease by the day, by the week, or by the year."
+   }
+]
+
+export const leadership = [
+   {
+      name : "John Carter",
+      title : "CEO & Founder"
+   },
+   {
+      name : "Sophie Moore",
+      title : "CTO & Founder"
+   },
+   {
+      name : "Matt Cannon",
+      title : "VP of Finance"
+   },
+   {
+      name : "Andy Smith",
+      title : "VP of Design"
+   },
+   {
+      name : "Sam Houston",
+      title : "VP of Product"
+   },
+]

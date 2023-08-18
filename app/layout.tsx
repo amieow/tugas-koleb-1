@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import Footer from './section/footer'
 import { inter } from './components/typography/fonts'
-import { Cols } from './layout/direction'
 import Loading from './loading'
 import Navbar from './section/navbar'
 export const metadata: Metadata = {
@@ -20,9 +19,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<Suspense fallback={<Loading/>}>
 				<body className={`${inter.className} flex bg-bg flex-col justify-between w-full min-h-screen`}>
-					<header className='w-full lg:flex-row gap-12  relative mb-36'>
-						<Navbar />
-					</header>
+					<p>Navbar</p>
 						<main className='h-full px-12'>
 							{children}
 						</main>
