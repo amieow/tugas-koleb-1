@@ -1,6 +1,16 @@
-
+"use client";
+import { Rows, Cols } from "../layout/direction";
+import Link from 'next/link';
+import { BsList, BsX } from 'react-icons/bs'
+import { navMenu } from "../asset/asset";
+import Button from "../components/button";
+import Logo from "../components/logo";
+import Paraf from "../components/typography/paraf";
+import React, { useState } from 'react';
 
 export default function Navbar() {
+   const [menuOpen, setMenuOpen] = useState(false);
+   const toggleMenu = () => setMenuOpen(!menuOpen);
    return (
       <Rows className={`w-full h-18 px-5 py-5 ${menuOpen ? 'overflow-hidden' : ''}`}>
          <Rows className="flex justify-between items-center h-full w-full">
