@@ -17,13 +17,15 @@ export default function RootLayout({
 	}) {
 	return (
 		<html lang='en'>
-			<body className={`${inter.className} flex bg-gray-50 flex-col justify-between items-stretch w-full min-h-screen`}>
-				<Navbar/>
-					<main className=' h-full relative'>
-						{children}
-					</main>
-				<Footer/>
-			</body>
+			<Suspense fallback={<Loading/>}>
+				<body className={`${inter.className} flex bg-bg flex-col justify-between w-full min-h-screen`}>
+					<p>Navbar</p>
+						<main className='h-full px-12'>
+							{children}
+						</main>
+					<Footer/>
+				</body>
+			</Suspense>
 		</html>
 	)
 }
