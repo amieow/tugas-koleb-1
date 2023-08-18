@@ -19,8 +19,8 @@ export const Cols = ({
    children,
    className = "",
    reversed = false,
-   whiteSpaceX = false,
-   whiteSpaceTop = false, 
+   whiteSpaceX =false,
+   whiteSpaceTop = false,
    whiteSpaceBottom = false,
    ...props
 } : LayoutProps & {whiteSpaceTop? : boolean}) => {
