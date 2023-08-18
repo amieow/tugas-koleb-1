@@ -10,7 +10,7 @@ import { classname } from '../asset/type/type'
 
 export default function Plans({className = ""} : classname) {
    return (
-      <Cols className={` w-full gap-16 mb-36 ${className}`} whiteSpaceX>
+      <Cols className={` w-full gap-16 ${className}`} whiteSpaceBottom whiteSpaceX>
          <Cols className=' max-w-5xl mx-auto gap-6 text-center'>
             <Title className='text-primary' variantI={5}>
                Why Serviced Office

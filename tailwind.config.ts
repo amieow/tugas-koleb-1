@@ -18,10 +18,12 @@ const config: Config = {
         "xl" : ["21px","28px"],
         "2.5xl" : ["26px" , "normal"],
         "3.5xl" : ["32px","normal"],
+        "5.5xl" : ["56px","normal"],
       },
       colors : {
         "primary" : "#0192FE",
-        "bg" : "rgba(245, 245, 245, 1)"
+        "bg" : "#FFF",
+        "blue-bg" : "#F0F6FF"
       }
     },
   },

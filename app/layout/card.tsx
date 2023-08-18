@@ -8,7 +8,7 @@ export default function Card({
    children,
    ...props
 } : {
-   direction : "rows" | "cols"
+   direction? : "rows" | "cols"
    className? : string
 } & Childrens & React.HTMLProps<HTMLDivElement>) {
    if (direction == "rows"){
