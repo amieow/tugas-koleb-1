@@ -20,7 +20,7 @@ export const Cols = ({
    className = "",
    reversed = false,
    whiteSpaceX =false,
-   whiteSpaceTop = false, 
+   whiteSpaceTop = false,
    whiteSpaceBottom = false,
    ...props
 } : LayoutProps) => {
