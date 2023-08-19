@@ -11,7 +11,7 @@ export default function Pricing() {
     return (
         <Cols whiteSpaceX className='w-full h-full'>
             <Rows className='w-full justify-center items-center mb-10'>
-                <Rows className='rounded-full w-[32%] px-1 py-1 gap-6 bg-blue-200'>
+                <Rows className='rounded-full px-1 pr-9 py-1 gap-6 bg-blue-200'>
                     <Button className='bg-white text-blue-500' variant='primary'>
                         <Paraf className='text-blue-500'>
                             Monthly
@@ -38,7 +38,6 @@ export default function Pricing() {
                     </Cols>
                     <Cols className='gap-5 my-8'>
                         <Cols>
-
                             <Rows>
                                 <Rows className='gap-2'>
                                     <Paraf>
@@ -51,7 +50,6 @@ export default function Pricing() {
                             </Rows>
                         </Cols>
                         <Cols>
-
                             <Rows>
                                 <Rows className='gap-2'>
                                     <Paraf>
@@ -64,7 +62,6 @@ export default function Pricing() {
                             </Rows>
                         </Cols>
                         <Cols>
-
                             <Rows>
                                 <Rows className='gap-2'>
                                     <Paraf>
@@ -289,7 +286,6 @@ export default function Pricing() {
                             </Rows>
                         </Cols>
                         <Cols>
-
                             <Rows>
                                 <Rows className='gap-2'>
                                     <Paraf>

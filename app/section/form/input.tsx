@@ -2,6 +2,7 @@ import React from 'react'
 import { Rows } from '../../layout/direction'
 import Paraf from '../../components/typography/paraf'
 import Image from 'next/image'
+import Button from '../../components/button'
 
 export default function Input({placeholder,withIcon} : {placeholder: string,withIcon?: boolean}) {
   return (
@@ -21,6 +22,19 @@ export function RadionButton({}) {
       <Paraf className=' text-opacity-50'>
         By clicking the below button you agree to our Terms of Service.
       </Paraf>
+    </Rows>
+  )
+}
+
+export function InputWithSubmit(){
+  return (
+    <Rows className=' pl-12 pr-2 py-2 border border-gray-500 justify-between border-opacity-30 rounded-[100px]'>
+      <Paraf className=' text-[#C1C1C1] text-opacity-40 h-fit my-auto'>
+        Enter your email
+      </Paraf>
+      <Button variant="primary">
+        Submit
+      </Button>
     </Rows>
   )
 }

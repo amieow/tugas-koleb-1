@@ -4,11 +4,12 @@ import Title from '../components/typography/title'
 import Image from 'next/image'
 import Button from '../components/button'
 import Link from 'next/link'
+import Cta from './cta'
 
 export default function ContactPricing() {
     return (
-        <Rows className='w-full' whiteSpaceBottom>
-            <Rows className='bg-blue-100 w-[90%] items-center py-[3%]' whiteSpaceX>
+        <Cta>
+            <Rows className=' w-[90%] items-center py-[3%]' whiteSpaceX>
                 <Cols className='w-full'>
                     <Title variantI={2} className='mb-5 w-[75%]'>
                         Confused about which plan would be most suitable for me?
@@ -21,6 +22,6 @@ export default function ContactPricing() {
                 </Cols>
                 <Image src={"Pricing/Group 48097566.svg"} alt='contact pricing' width={428} height={275} />
             </Rows>
-        </Rows>
+        </Cta>
     )
 }

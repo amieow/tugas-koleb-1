@@ -18,7 +18,7 @@ export default function Faq() {
                     </Paraf>
                 </Cols>
             </Cols>
-            <Cols className='w-[77%] mx-auto gap-7'>
+            <Cols whiteSpaceX className='w-[77%] mx-auto gap-7'>
                 <Card direction='rows' className='justify-between'>
                     <Title variantI={3}>
                         What are the benefits of joining the Futurspace network?
