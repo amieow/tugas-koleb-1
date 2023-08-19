@@ -55,3 +55,20 @@ export const AboutHero = () => {
       </Cols>
    )
 }
+export const ContactHero = () => {
+   return (
+      <Cols whiteSpaceX whiteSpaceBottom whiteSpaceTop>
+         <Cols className=" max-w-[903px] gap-6 mx-auto">
+            <Title className=" text-primary text-center" variantI={5}>
+               Contact us
+            </Title>
+            <Title className=" text-center" variantI={1}>
+               Our space is more than a shared office. It is a meeting ground.
+            </Title>
+            <Paraf className=" text-opacity-50 text-center">
+               Find focus and clarity space to do the things you need to do to grow your business in New York. Book by the month, daily or by the hour.
+            </Paraf>
+         </Cols>
+      </Cols>
+   )
+}

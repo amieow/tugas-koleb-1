@@ -150,3 +150,30 @@ export const leadership = [
       title : "VP of Product"
    },
 ]
+
+export const contactRows = [
+   {
+      title : "Global Locations",
+      description : "1901 Thornridge Cir. Shiloh\n, Hawaii 81063",
+      cta : {
+         title : "All locations",
+         imageUrl : "Contact/iconLocation.svg"
+      }
+   },
+   {
+      title : "Global Locations",
+      description : `(252) 555-0126\n(808) 555-0111`,
+      cta : {
+         title : "Learn more",
+         imageUrl : "Service/icon.svg"
+      }
+   },
+   {
+      title : "Global Locations",
+      description : "Our friendly team is here to help.",
+      cta : {
+         title : "Email us",
+         imageUrl : "Service/icon.svg"
+      }
+   }
+]
