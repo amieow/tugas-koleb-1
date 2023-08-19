@@ -69,7 +69,7 @@ export const navMenu = [
    },
    {
       text: "Offices",
-      url: "/offices",
+      url: "/",
    },
    {
       text: "Spaces",

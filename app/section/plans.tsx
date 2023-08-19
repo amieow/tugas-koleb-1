@@ -24,7 +24,7 @@ export default function Plans({className = ""} : classname) {
          </Cols>
          <Rows className=' flex-wrap gap-12'>
             {plans.map((data,index) => (
-               <Card className=' w-full lg:max-w-md px-12 gap-6 h-[616px] rounded-3xl' direction="cols" key={index}>
+               <Card className=' w-full lg:max-w-md px-2 max-sm:py-4 sm:px-12 gap-6 h-fit rounded-3xl' direction="cols" key={index}>
                   <div className=' relative w-full h-60'>
                      <Image className=' object-cover rounded-3xl' style={{ maxWidth: '100%', marginLeft: '0', marginRight: 'auto' }} fill alt={`plans-${data.title }`} src={`Plans/image-${index + 1}.svg`}/>
                   </div>

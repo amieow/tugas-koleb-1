@@ -13,13 +13,13 @@ export default function Card({
 } & Childrens & React.HTMLProps<HTMLDivElement>) {
    if (direction == "rows"){
       return (
-         <Rows className={` bg-white p-11 ${className}`}>
+         <Rows className={` bg-white p-5 md:p-11 ${className}`}>
             {children}
          </Rows>
       )
    }
    return (
-      <Cols {...props} className={` bg-white p-11 ${className}`}>
+      <Cols {...props} className={` bg-white p-5 md:p-11 ${className}`}>
          {children}
       </Cols>
    )

@@ -13,8 +13,8 @@ export default function Cta({
    className? : string
 } & Childrens) {
    return (
-      <Rows whiteSpaceBottom className={`  rounded-3xl`} whiteSpaceX>
-         <Rows className={`px-14 py-7  lg:px-[100px] bg-blue-bg lg:py-12 w-full rounded-3xl ${className}`}>
+      <Rows whiteSpaceBottom className={`rounded-3xl`} whiteSpaceX>
+         <Rows className={`px-5 md:px-14 py-7  lg:px-[100px] bg-blue-100 lg:py-12 w-full rounded-3xl ${className}`}>
             {children}
          </Rows>
       </Rows>
@@ -88,6 +88,25 @@ export function CtaContact() {
                </Button>
             </Rows>
          </Cols>
+      </Cta>
+   )
+}
+
+export const CtaSpaces = () => {
+   return (
+      <Cta className=' gap-16 flex-col-reverse lg:gap-5 lg:flex-row'>
+         <Cols className=' gap-9'>
+            <Title variantI={1}>
+               Stay productive with modern workspace, private office, and coworking solutions
+            </Title>
+            <Paraf>
+               Workspaces that suit your business. We have professional and inspiring work environments to suit businesses of all sizes and budget.
+            </Paraf>
+            <Button className='w-fit' variant="primary">
+               Get Started
+            </Button>
+         </Cols>
+         <Image src={"CTA/image-4.svg"} alt='blur' width={399} height={361}/>
       </Cta>
    )
 }

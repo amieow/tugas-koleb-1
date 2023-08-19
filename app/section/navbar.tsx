@@ -7,28 +7,33 @@ import Button from "../components/button";
 import Logo from "../components/logo";
 import Paraf from "../components/typography/paraf";
 import React, { useState } from 'react';
+import { CurrentPage } from "../utils/util";
 
 export default function Navbar() {
    const [menuOpen, setMenuOpen] = useState(false);
+   const currentPage = CurrentPage()
+   const isCurrentAbout = currentPage == "about";
    const toggleMenu = () => setMenuOpen(!menuOpen);
    return (
-      <Rows className={`w-full h-18 px-5 py-5 ${menuOpen ? 'overflow-hidden' : ''}`}>
-         <Rows className="flex justify-between items-center h-full w-full">
+      <Rows className={`w-full h-18 px-0 sm:px-5 py-5 absolute top-0 z-50 ${menuOpen ? 'overflow-hidden' : ''}`}>
+         <Rows whiteSpaceX className="flex justify-between items-center h-full w-full">
             <Link href={"/"} >
-               <Logo withLogo />
+               <Logo isAbout={isCurrentAbout} withLogo />
             </Link>
             <Rows className={`hidden lg:flex items-center ${menuOpen ? 'hidden' : 'flex'} gap-8`}>
-               {navMenu.map((menu, index) => (
-                  <Button variant={"none"} key={index} className="active:font-bold">
+               {navMenu.map((menu, index) => {
+                  const isCurrent = menu.url.includes(currentPage)
+                  return(
+                  <Button variant={"none"} key={index}>
                      <Link href={menu.url}>
-                        <Paraf>
+                        <Paraf className={`${isCurrent ? "font-bold" : ""} ${isCurrentAbout ? "text-white" : ""} `}>
                            {menu.text}
                         </Paraf>
                      </Link>
                   </Button>
-               ))}
-               <Button variant={"primary"} className="px-5 py-3 flex-shrink-0">
-                  <Paraf className="text-white text-[18px]">
+               )})}
+               <Button variant={"primary"} className={`px-5 py-3 flex-shrink-0 ${isCurrentAbout && "bg-white"}`}>
+                  <Paraf className={`${isCurrentAbout ? "text-primary" : "text-white"} text-center text-[18px]`}>
                      Sign up
                   </Paraf>
                </Button>
@@ -45,17 +50,19 @@ export default function Navbar() {
                   </Rows>
                </Rows>
                <Cols className="flex-col text-center my-10">
-                  {navMenu.map((menu, index) => (
-                     <Button variant={"none"} key={index} className="text-center py-3 active:font-bold" onClick={() => setMenuOpen(false)}>
+                  {navMenu.map((menu, index) => {
+                     const isCurrent = menu.url.includes(currentPage)
+                     return(
+                     <Button variant={"none"} key={index} className={`text-center py-3 ${isCurrent ? " font-bold" : ""}`} onClick={() => setMenuOpen(false)}>
                         <Link href={menu.url}>
-                           <Paraf>
+                           <Paraf className={`${isCurrent ? " font-bold" : ""}`}>
                               {menu.text}
                            </Paraf>
                         </Link>
                      </Button>
-                  ))}
+                  )})}
                   <Button className='py-2 px-5' variant={"primary"}>
-                     <Paraf className="text-white text-center text-[18px]">
+                     <Paraf className={` text-white text-center text-[18px]`}>
                         Sign up
                      </Paraf>
                   </Button>

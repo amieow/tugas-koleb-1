@@ -1,12 +1,13 @@
 import Title from "../components/typography/title"
-import { Cols,Rows } from "../layout/direction"
+import { Cols, Rows } from "../layout/direction"
 import Paraf from "../components/typography/paraf"
 import Button from "../components/button"
 import Image from "next/image"
+import { InputWithSubmit } from "./form/input"
 export const HomePageHero = () => {
    return (
       <Cols whiteSpaceBottom whiteSpaceTop whiteSpaceX className='w-full lg:flex-row gap-12 relative'>
-            <Cols className=' max-w-lg gap-16 h-fit my-auto'>
+         <Cols className=' max-w-lg gap-16 h-fit my-auto'>
             <Cols className='gap-8'>
                <Title variantI={1}>
                   The workspacethat works for you& your team
@@ -15,19 +16,19 @@ export const HomePageHero = () => {
                   A safe, comfortable, and hassle-free Coworking workspace increases productivity. Ideal workspaces make life easier and more productive.
                </Paraf>
             </Cols>
-            <Rows className='gap-9'>
-               <Button variant="primary">
-                  Helo
+            <Rows className='gap-9 flex-wrap'>
+               <Button className=" flex-shrink-0" variant="primary">
+                  Discover now
                </Button>
-               <Button variant="outline">
-                  Second
+               <Button className=" flex-shrink-0" variant="outline">
+                  Book a tour
                </Button>
             </Rows>
-            </Cols>
-            <div className=' w-full h-[616px] max-w-5xl relative '>
-               <Image priority loading='eager'  src={"Hero/hero.svg"} alt='blur' fill/>
-            </div>
          </Cols>
+         <div className=' w-full h-[616px] max-w-5xl relative '>
+            <Image className="h-fit" priority loading='eager' src={"Hero/hero.svg"} alt='blur' fill />
+         </div>
+      </Cols>
    )
 }
 
@@ -48,8 +49,8 @@ export const AboutHero = () => {
                   </Paraf>
                </Cols>
             </Rows>
-            <div className=" relative w-full h-[756px]">
-               <Image src={"Hero/heroAbout.svg"} alt="blur" fill/>
+            <div className=" relative w-full h-fit">
+               <Image className="h-[756px]" src={"Hero/heroAbout.svg"} alt="blur" fill />
             </div>
          </Cols>
       </Cols>
@@ -84,6 +85,27 @@ export const PricingHero = () => {
                {`For companies of all sizes, we provide the global scale and flexibility to help your business adapt to uncertainty. Find the space that's right for you.`}
             </Paraf>
          </Cols>
+      </Cols>
+   )
+}
+
+export const SpacesHero = () => {
+   return (
+      <Cols className=" gap-16 lg:gap-5 min-[1440px]:flex-row" whiteSpaceBottom whiteSpaceTop whiteSpaceX>
+         <Cols className="gap-16 h-fit my-auto">
+            <Cols className="flex-shrink-0 gap-8">
+               <Title variantI={1}>
+                  A creative coworking space in New York
+               </Title>
+               <Paraf className=" text-opacity-70">
+                  You can book personal office space across the country by the day, hour or month.
+               </Paraf>
+            </Cols>
+            <InputWithSubmit />
+         </Cols>
+         <div className="relative w-full min-[1440px]:max-w-[836px] h-[616px]">
+            <Image className="h-fit" src={"Spaces/imageHero.svg"} alt="blur" fill />
+         </div>
       </Cols>
    )
 }
