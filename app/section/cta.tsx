@@ -51,17 +51,43 @@ export function CtaAbout({
 export function CtaHomepage() {
    return (
       <Cta className=' justify-between gap-20 lg:gap-44 max-lg:flex-col-reverse'>
-            <Cols className=' max-w-3xl gap-9'>
-               <Title variantI={1}>
-                  Customised workspace for rent wherever you need it
-               </Title>
-               <Button variant="primary" className=' w-fit'>
-                  Book Tour
+         <Cols className=' max-w-3xl gap-9'>
+            <Title variantI={1}>
+               Customised workspace for rent wherever you need it
+            </Title>
+            <Button variant="primary" className=' w-fit'>
+               Book Tour
+            </Button>
+         </Cols>
+         <div className=' w-full max-w-[428px] relative h-[275px] flex min-[1440px]:flex-shrink-0'>
+            <Image alt='PPl' fill src={"CTA/image-1.svg"}/>
+         </div>
+      </Cta>
+   )
+}
+
+export function CtaContact() {
+   return (
+      <Cta className='px-5 md:p-[50px] gap-6 justify-between max-[1240px]:flex-col '>
+         <div className='w-full min-[1240px]:max-w-[515px] relative  h-[329px]'>
+            <Image className='max-[1240px]:object-cover h-fit rounded-3xl' src={"CTA/image-3.svg"} alt='blur' fill/>
+         </div>
+         <Cols className=' gap-3 max-w-2xl'>
+            <Title variantI={1}>
+               Coworking, Private Offices and More
+            </Title>
+            <Paraf className=' text-opacity-50'>
+               Your membership at is all-inclusive, providing amenities designed to allow you to focus on your business instead of logistics.
+            </Paraf>
+            <Rows className='flex-wrap gap-9'>
+               <Button className=' flex-shrink-0' variant="primary">
+                  Discover now
                </Button>
-            </Cols>
-            <div className=' w-full max-w-[428px] relative h-[275px] flex min-[1440px]:flex-shrink-0'>
-               <Image alt='PPl' fill src={"CTA/image-1.svg"}/>
-            </div>
-         </Cta>
+               <Button className=' flex-shrink-0' variant="outline">
+                  Book a tour
+               </Button>
+            </Rows>
+         </Cols>
+      </Cta>
    )
 }
