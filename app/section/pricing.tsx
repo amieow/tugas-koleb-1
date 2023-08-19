@@ -11,7 +11,7 @@ export default function Pricing() {
     return (
         <Cols whiteSpaceX className='w-full h-full'>
             <Rows className='w-full justify-center items-center mb-10'>
-                <Rows className='rounded-full w-[32%] px-1 py-1 gap-6 bg-blue-200'>
+                <Rows className='rounded-full w-auto px-1 py-1 gap-6 bg-blue-200'>
                     <Button className='bg-white text-blue-500' variant='primary'>
                         <Paraf className='text-blue-500'>
                             Monthly
@@ -22,7 +22,7 @@ export default function Pricing() {
                     </Button>
                 </Rows>
             </Rows>
-            <Rows className='w-full justify-center items-center gap-8' whiteSpaceBottom>
+            <Rows className='w-full justify-center items-center gap-8 flex-col lg:flex-row' whiteSpaceBottom>
                 <Card direction='cols' className='rounded-lg w-[436px]'>
                     <Cols className='border-b-2 pb-8'>
                         <Image src={"Pricing/Ellipse 181.svg"} className='mb-8' alt="thunder" width={42} height={42} />
