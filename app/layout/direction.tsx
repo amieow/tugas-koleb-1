@@ -7,7 +7,7 @@ export const Rows = ({
    whiteSpaceX = false,
    whiteSpaceBottom = false,
    ...props
-} : LayoutProps) => {
+}: LayoutProps) => {
    return (
       <div {...props} className={`flex ${reversed ? "flex-row-reverse" : "flex-row"} ${whiteSpaceBottom ? "mb-36" : ""} ${whiteSpaceX ? "mx-auto max-w-[1440px] px-12 min-[1500px]:px-0" : ""} ${className}`}>
          {children}
@@ -20,7 +20,7 @@ export const Cols = ({
    className = "",
    reversed = false,
    whiteSpaceX =false,
-   whiteSpaceTop = false, 
+   whiteSpaceTop = false,
    whiteSpaceBottom = false,
    ...props
 } : LayoutProps & {whiteSpaceTop? : boolean}) => {

@@ -16,12 +16,12 @@ export default function Subscription({
 }) {
    return (
       <Cols className={` w-full ${breakLg ? "max-lg:hidden" : ""}`} whiteSpaceX whiteSpaceBottom>
-         <Cols className='mx-auto gap-14 max-w-6xl'>
+         <Cols className='mx-auto gap-14 max-w-7xl'>
             <Cols className=' gap-6'>
-               <Title variantI={1}>
+               <Title variantI={1} className='text-center'>
                   {title}
                </Title>
-               <Paraf className=' text-center leading-7'>
+               <Paraf className=' text-center leading-7 max-w-2xl mx-auto'>
                   {description}
                </Paraf>
             </Cols>
