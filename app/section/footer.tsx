@@ -5,6 +5,7 @@ import Logo from "../components/logo";
 import { Menu, navFooter } from "../asset/asset";
 import Title from "../components/typography/title";
 import Button from "../components/button";
+import Link from "next/link";
 
 export default function Footer() {
    return (
@@ -52,11 +53,19 @@ export function RightFooterLg(){
                   {itm.Title}
                </Title>
                <Cols className=" gap-4">
-                  {itm.Menu.map((item,index) => (
-                     <Button variant={"none"} className="" key={index}>
-                        {item}
-                     </Button>
-                  ))}
+                  {itm.Title == "About" 
+                  ? navFooter.map((item,index) => (
+                     <Link scroll passHref href={`${item.url}`} key={index}>
+                           <Button variant={"none"} className="" key={index}>
+                              {item.text}
+                           </Button>
+                        </Link>
+                     ))
+                  : itm.Menu.map((item,index) => (
+                  <Button variant={"none"} className="" key={index}>
+                     {item}
+                  </Button>
+               ))}
                </Cols>
             </Cols>
          ))}
@@ -68,9 +77,11 @@ export function RightFooterMd(){
    return (
       <Cols className="gap-9 lg:hidden">
          {navFooter.map((itm,index) => (
-            <Button className="text-center" variant="none" key={index}>
-               {itm.text}
-            </Button>
+            <Link className=" mx-auto" href={itm.url} key={index}>
+               <Button className="text-center" variant="none" key={index}>
+                  {itm.text}
+               </Button>
+            </Link>
          ))}
       </Cols>
    )

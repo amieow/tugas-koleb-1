@@ -12,7 +12,7 @@ export default function Feedback() {
          <Title className=" text-center" variantI={1}>
             One of our workspace experts will reach out to you based on your communication preferences.
          </Title>
-         <Cols className="bg-white px-20 py-12 gap-6 rounded-3xl">
+         <Cols className="bg-white px-5 sm:px-10 md:px-20 pt-8 py-5 md:py-12 gap-6 rounded-3xl">
             <Cols className="mx-auto max-w-2xl gap-6">
                <Title className=" flex-shrink-0 text-center w-fit mx-auto" variantI={1}>
                   {`We'd love to hear from you`}

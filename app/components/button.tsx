@@ -28,6 +28,7 @@ export default function Button({
 
 export function LearnMore (){
    return (
+      
       <Rows className='relative gap-3 hover:gap-6 transition-all cursor-pointer'>
          <Title className='text-primary' variantI={5}>
             Learn more

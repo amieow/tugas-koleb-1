@@ -7,8 +7,10 @@ import Client from '../section/client'
 import { CtaAbout } from '../section/cta'
 import Subscription from '../section/subscription'
 import { AboutHero } from '../section/hero'
+import dynamic from 'next/dynamic'
+import Loading from '../loading'
 
-export default function Page() {
+function Page() {
    return (
       <>
          <AboutHero/>
@@ -28,3 +30,5 @@ export default function Page() {
       </>
    )
 }
+
+export default dynamic(() => Promise.resolve(Page),{loading : () => <Loading/>,ssr : false})

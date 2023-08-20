@@ -3,6 +3,6 @@
 import { useSelectedLayoutSegment } from "next/navigation"
 
 export const CurrentPage = () => {
-   const currentPage = String(useSelectedLayoutSegment())
+   const currentPage = useSelectedLayoutSegment() || "/"
    return currentPage
 }

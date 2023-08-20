@@ -4,13 +4,14 @@ import Paraf from "../components/typography/paraf"
 import Button from "../components/button"
 import Image from "next/image"
 import { InputWithSubmit } from "./form/input"
+import ImageSuspense from "../layout/image"
 export const HomePageHero = () => {
    return (
       <Cols whiteSpaceBottom whiteSpaceTop whiteSpaceX className='w-full lg:flex-row gap-12 relative'>
          <Cols className=' max-w-lg gap-16 h-fit my-auto'>
             <Cols className='gap-8'>
                <Title variantI={1}>
-                  The workspacethat works for you& your team
+                  The workspace that works for you& your team
                </Title>
                <Paraf>
                   A safe, comfortable, and hassle-free Coworking workspace increases productivity. Ideal workspaces make life easier and more productive.
@@ -25,9 +26,11 @@ export const HomePageHero = () => {
                </Button>
             </Rows>
          </Cols>
-         <div className=' w-full h-[616px] max-w-5xl relative '>
-            <Image className="h-fit" priority loading='eager'  src={"Hero/hero.svg"} alt='blur' fill/>
-         </div>
+         <ImageSuspense>
+            <div className=' w-full h-[616px] max-w-5xl relative max-sm:hidden'>
+               <Image  className="h-fit " priority loading='eager'  src={"Hero/hero.svg"} alt='blur' fill/>
+            </div>
+         </ImageSuspense>
       </Cols>
    )
 }
@@ -49,9 +52,11 @@ export const AboutHero = () => {
                   </Paraf>
                </Cols>
             </Rows>
-            <div className=" relative w-full h-fit">
-               <Image className="h-[756px]" src={"Hero/heroAbout.svg"} alt="blur" fill/>
-            </div>
+            <ImageSuspense>
+               <div className=" relative w-full h-[756px] max-sm:hidden">
+                  <Image className=" h-fit" src={"Hero/heroAbout.svg"} alt="blur" priority fill/>
+               </div>
+            </ImageSuspense>
          </Cols>
       </Cols>
    )
@@ -103,9 +108,12 @@ export const SpacesHero = () => {
             </Cols>
             <InputWithSubmit/>
          </Cols>
-         <div className="relative w-full min-[1440px]:max-w-[836px] h-[616px]">
-            <Image className="h-fit" src={"Spaces/imageHero.svg"} alt="blur" fill/>
-         </div>
+         <ImageSuspense>
+            <div className="relative max-sm:hidden w-full min-[1440px]:max-w-[836px] h-[616px] ">
+               <Image priority className="h-fit" src={"Spaces/imageHero.svg"} alt="blur" fill/>
+            </div>
+         </ImageSuspense>
+         
       </Cols>
    )
 }

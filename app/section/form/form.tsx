@@ -21,7 +21,7 @@ export default function Form() {
             <Cols className=' gap-16'>
                <Input placeholder='First Name'/>
                <Input placeholder='Last Name'/>
-               <Rows className=' gap-16 flex-col lg:flex-row'>
+               <Rows className='gap-7 lg:gap-16 flex-col lg:flex-row'>
                   <Input placeholder='Your Email'/>
                   <Input withIcon placeholder='select Option'/>
                </Rows>

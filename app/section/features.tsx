@@ -8,7 +8,7 @@ import { classname } from "../asset/type/type";
 
 export default function Features({className = ""} : classname ) {
    return (
-      <Cols whiteSpaceBottom whiteSpaceX className={`relative p-11 gap-60 lg:flex-row ${className}`}>
+      <Cols whiteSpaceBottom whiteSpaceX className={`relative p-11 gap-20 md:gap-32 lg:gap-60 lg:flex-row ${className}`}>
          <div className="relative h-[616px] w-full lg:max-w-lg ">
             <Image alt="" fill src={"Feature/image-1.svg"}/>
          </div>

@@ -46,7 +46,7 @@ export const navFooter = [
    },
    {
       text: "Offices",
-      url: "/offices",
+      url: "/",
    },
    {
       text: "Spaces",

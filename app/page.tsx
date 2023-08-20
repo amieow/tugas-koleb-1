@@ -6,8 +6,10 @@ import Review from './section/review'
 import Subscription from './section/subscription'
 import { HomePageHero } from './section/hero'
 import { CtaHomepage } from './section/cta'
+import dynamic from 'next/dynamic'
+import Loading from './loading'
 
-export default function Home() {
+ function Home() {
    return (
       <>
          <HomePageHero/>
@@ -21,3 +23,4 @@ export default function Home() {
       </>
    )
 }
+export default dynamic(() => Promise.resolve(Home),{loading : () => <Loading/> ,ssr : false})

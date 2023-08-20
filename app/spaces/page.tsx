@@ -1,11 +1,13 @@
+import dynamic from "next/dynamic";
 import { CtaSpaces } from "../section/cta";
 import Feedback from "../section/feedback";
 import { SpacesHero } from "../section/hero";
 import Plans from "../section/plans";
 import Review from "../section/review";
+import Loading from "../loading";
 
 
-export default function Page() {
+function Page() {
    return (
       <>
          <SpacesHero/>
@@ -16,3 +18,5 @@ export default function Page() {
       </>
    )
 }
+
+export default dynamic(() => Promise.resolve(Page),{loading : () => <Loading/>,ssr : false})

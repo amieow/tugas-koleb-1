@@ -4,8 +4,10 @@ import Pricing from '../section/pricing'
 import Faq from '../section/faq'
 import Subscription from '../section/subscription'
 import ContactPricing from '../section/contactPricing'
+import dynamic from 'next/dynamic'
+import Loading from '../loading'
 
-export default function page() {
+function Page() {
     return (
         <>
             <PricingHero />
@@ -16,3 +18,5 @@ export default function page() {
         </>
     )
 }
+
+export default dynamic(() => Promise.resolve(Page),{loading : () => <Loading/>,ssr : false})

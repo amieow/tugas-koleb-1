@@ -5,20 +5,20 @@ import Image from 'next/image'
 import Button from '../components/button'
 import Link from 'next/link'
 import Cta from './cta'
-
+ 
 export default function ContactPricing() {
     return (
-        <Cta>
-            <Rows className=' w-[90%] items-center py-[3%]' whiteSpaceX>
-                <Cols className='w-full'>
-                    <Title variantI={2} className='mb-5 w-[75%]'>
+        <Cta className=' max-md:px-7 max-lg:px-10 '>
+            <Rows className=' items-center flex-col-reverse gap-8 lg:flex-row'>
+                <Cols className='w-full '>
+                    <Title variantI={2} className='mb-5 w-full text-center lg:text-start lg:w-[75%]'>
                         Confused about which plan would be most suitable for me?
                     </Title>
-                    <Button variant={"primary"} className='max-w-[30%] text-center'>
-                        <Link href={"/contact"} >
+                    <Link className='w-fit mx-auto lg:mx-0' href={"/contact"} >
+                        <Button variant={"primary"} className='w-fit text-center'>
                             Contact us
-                        </Link>
-                    </Button>
+                        </Button>
+                    </Link> 
                 </Cols>
                 <Image src={"Pricing/Group 48097566.svg"} alt='contact pricing' width={428} height={275} />
             </Rows>

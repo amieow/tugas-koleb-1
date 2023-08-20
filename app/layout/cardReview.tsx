@@ -17,7 +17,7 @@ export default function CardReview({
 }) {
    const {name,title,avatar} = user
    return (
-      <Cols key={name} className='px-12 py-11 gap-6 flex-shrink-0 bg-white rounded-3xl w-[522px] h-fit'>
+      <Cols key={name} className='px-5 md:px-12 py-4 md:py-11 gap-6 flex-shrink-0 bg-white rounded-3xl w-[522px] h-fit'>
          <div className=' relative h-6 w-[164px]'>
             <Image alt='star-4' src={"Review/iconStar.svg"} fill/>
          </div>

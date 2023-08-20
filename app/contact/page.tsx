@@ -5,8 +5,10 @@ import Contact from '../section/contact'
 import { CtaContact } from '../section/cta'
 import Client from '../section/client'
 import Form from '../section/form/form'
+import dynamic from 'next/dynamic'
+import Loading from '../loading'
 
-export default function Page() {
+function Page() {
    return (
       <>
          <ContactHero/>
@@ -18,3 +20,5 @@ export default function Page() {
       </>
    )
 }
+
+export default dynamic(() => Promise.resolve(Page),{loading : () => <Loading/>,ssr : false})
