@@ -43,7 +43,7 @@ export default function Navbar() {
             </Rows>
          </Rows>
          <Rows onBlur={() => menuOpen && setMenuOpen(false)} onWheel={() => menuOpen && setMenuOpen(false)} onClick={() => setMenuOpen(false)} className={`fixed h-full top-0 ${menuOpen ? "left-0" : "left-[-100%]"} w-full`}>
-            <Cols className={`fixed z-50 top-0 transition-all ease-in-out duration-700 ${menuOpen ? " left-0 shadow-[12px_0px_59px_0px_#2d3748]" : "left-[-100%]"} min-w-[330px] w-[75%] lg:hidden h-screen border-r-2 border-r-gray-500 p-5  bg-slate-50`}>
+            <Cols className={`fixed z-50 top-0 transition-all ease-in-out duration-700 ${menuOpen ? " left-0 shadow-[6px_0px_40px_1px_#2d3748]" : "left-[-100%]"} min-w-[330px] w-[75%] lg:hidden h-screen border-r-2 border-r-gray-500 p-5  bg-slate-50`}>
                <Rows className="flex w-full items-center justify-between">
                   <Link scroll href={"/"}>
                      <Logo/>

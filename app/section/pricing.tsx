@@ -22,8 +22,8 @@ export default function Pricing() {
                     </Button>
                 </Rows>
             </Rows>
-            <Rows className='w-full justify-center items-center gap-8' whiteSpaceBottom>
-                <Card direction='cols' className='rounded-lg w-[436px]'>
+            <Rows className='w-full justify-center items-center max-[1100px]:flex-col gap-8' whiteSpaceBottom>
+                <Card direction='cols' className='rounded-lg w-full min-[1100px]:w-[436px]'>
                     <Cols className='border-b-2 pb-8'>
                         <Image src={"Pricing/Ellipse 181.svg"} className='mb-8' alt="thunder" width={42} height={42} />
                         <Title variantI={3} className='mb-8'>
@@ -106,7 +106,7 @@ export default function Pricing() {
                         </Cols>
                     </Cols>
                 </Card>
-                <Card direction='cols' className='rounded-lg w-[436px] border border-blue-600 mt-[8%]'>
+                <Card direction='cols' className='rounded-lg w-full min-[1100px]:w-[436px] border border-blue-600 mt-[8%]'>
                     <Cols className='border-b-2 pb-8'>
                         <Image src={"Pricing/Ellipse 181 (1).svg"} className='mb-8' alt="star" width={42} height={42} />
                         <Title variantI={3} className='mb-8'>
@@ -219,7 +219,7 @@ export default function Pricing() {
                     </Cols>
                 </Card>
 
-                <Card direction='cols' className='rounded-lg w-[436px]'>
+                <Card direction='cols' className='rounded-lg w-full min-[1100px]:w-[436px]'>
                     <Cols className='border-b-2 pb-8'>
                         <Image src={"Pricing/Ellipse 181 (2).svg"} className='mb-8' alt="platinum" width={42} height={42} />
                         <Title variantI={3} className='mb-8'>

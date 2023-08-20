@@ -8,8 +8,8 @@ import Input from "./form/input";
 
 export default function Feedback() {
    return (
-      <Cta className="flex-col px-12 lg:px-32 py-24 lg:py-[150px] gap-16">
-         <Title className=" text-center" variantI={1}>
+      <Cta className="flex-col px-0 sm:px-12 lg:px-32 py-24 lg:py-[150px] gap-16">
+         <Title className=" text-center hyphens-auto" variantI={1}>
             One of our workspace experts will reach out to you based on your communication preferences.
          </Title>
          <Cols className="bg-white px-5 sm:px-10 md:px-20 pt-8 py-5 md:py-12 gap-6 rounded-3xl">

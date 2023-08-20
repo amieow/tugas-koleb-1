@@ -14,7 +14,7 @@ export default function Cta({
 } & Childrens) {
    return (
       <Rows whiteSpaceBottom className={`rounded-3xl`} whiteSpaceX>
-         <Rows className={`px-5 md:px-14 py-7  lg:px-[100px] bg-blue-100 lg:py-12 w-full rounded-3xl ${className}`}>
+         <Rows className={`md:px-14 py-7  lg:px-[100px] bg-blue-100 lg:py-12 w-full rounded-3xl ${className}`}>
             {children}
          </Rows>
       </Rows>
@@ -29,7 +29,7 @@ export function CtaAbout({
    description : string
 }){
    return (
-      <Cta className=' gap-16 max-lg:flex-col-reverse lg:pr-16'>
+      <Cta className=' px-5 gap-16 max-lg:flex-col-reverse lg:pr-16'>
          <Cols className=' max-w-[806px] gap-9'>
             <Title variantI={1}>
                {title}
@@ -50,7 +50,7 @@ export function CtaAbout({
 
 export function CtaHomepage() {
    return (
-      <Cta className=' justify-between gap-20 lg:gap-44 max-lg:flex-col-reverse'>
+      <Cta className='px-5 justify-between gap-20 lg:gap-44 max-lg:flex-col-reverse'>
          <Cols className=' max-w-3xl gap-9'>
             <Title variantI={1}>
                Customised workspace for rent wherever you need it
@@ -94,7 +94,7 @@ export function CtaContact() {
 
 export const CtaSpaces = () => {
    return (
-      <Cta className=' gap-16 flex-col-reverse lg:gap-5 lg:flex-row'>
+      <Cta className=' gap-16 px-5 flex-col-reverse lg:gap-5 lg:flex-row'>
          <Cols className=' gap-9'>
             <Title variantI={1}>
                Stay productive with modern workspace, private office, and coworking solutions
